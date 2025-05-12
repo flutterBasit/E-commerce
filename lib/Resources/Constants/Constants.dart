@@ -12,7 +12,9 @@ class Constants {
 
   static const Color redColor = Color(0xffF83758);
 
-  static const Color anotherGreyColor = Color(0xffC4C4C4);
+  static const Color greyColor2 = Color(0xffC4C4C4);
+
+  //static const Color redColor2 = Color(0xffF83758);
 
   //taking google fonts as String
   static const String fontStyle = 'Montserrat';
@@ -38,8 +40,14 @@ class Constants {
       fontSize: 18.sp, fontWeight: FontWeight.bold, color: blackColor));
 
   static TextStyle introPrevious = googleFontStyle(TextStyle(
-      fontSize: 18.sp, fontWeight: FontWeight.bold, color: anotherGreyColor));
+      fontSize: 18.sp, fontWeight: FontWeight.bold, color: greyColor2));
 
   static TextStyle signinAppBar = googleFontStyle(TextStyle(
       fontSize: 36.sp, fontWeight: FontWeight.bold, color: blackColor));
+
+  static TextStyle signinForgotPass =
+      googleFontStyle(TextStyle(fontSize: 12.sp, color: redColor));
+
+  static TextStyle signinbuttonAll = googleFontStyle(TextStyle(
+      fontSize: 20.sp, fontWeight: FontWeight.w500, color: whiteColor));
 }
