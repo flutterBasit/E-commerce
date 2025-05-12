@@ -19,6 +19,8 @@ class _SigninscreenState extends State<Signinscreen> {
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
+          // mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 10.h,
@@ -27,6 +29,7 @@ class _SigninscreenState extends State<Signinscreen> {
             AuthTextField(
               labelText: 'Username or Email',
               controller: _Emailcontroller,
+              hintText: 'Email@example.com',
             )
           ],
         ),
