@@ -14,6 +14,8 @@ class Constants {
 
   static const Color greyColor2 = Color(0xffC4C4C4);
 
+  static const Color darkgreyColor = Color(0xff575757);
+
   //static const Color redColor2 = Color(0xffF83758);
 
   //taking google fonts as String
@@ -50,4 +52,17 @@ class Constants {
 
   static TextStyle signinbuttonAll = googleFontStyle(TextStyle(
       fontSize: 20.sp, fontWeight: FontWeight.w500, color: whiteColor));
+
+  static TextStyle signinOrContinue = googleFontStyle(TextStyle(
+      fontSize: 12.sp, fontWeight: FontWeight.w400, color: darkgreyColor));
+
+  static TextStyle signinCreateAnAccount =
+      googleFontStyle(TextStyle(fontSize: 14.sp, color: darkgreyColor));
+
+  static TextStyle signinCreateAnAccount2 = googleFontStyle(TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: redColor,
+      decoration: TextDecoration.underline,
+      decorationColor: redColor));
 }

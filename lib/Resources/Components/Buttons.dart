@@ -6,21 +6,21 @@ import 'package:get/get.dart';
 class Buttons extends StatelessWidget {
   final Color? color;
   final String title;
-  final OnTap? onTap;
+  final GestureTapCallback? onTap;
 
   const Buttons({super.key, this.color, required this.title, this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        onTap;
-      },
+      onTap: onTap,
       child: Container(
         height: 55.h,
         width: 317.w,
         decoration: BoxDecoration(
-            color: color, borderRadius: BorderRadius.circular(20)),
+            color: color,
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: Constants.blackColor, width: 0.5)),
         child: Center(
           child: Text(
             title,
